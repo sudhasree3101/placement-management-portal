@@ -179,13 +179,13 @@ http://localhost:5173
 ## 👩‍💻 Developer
 
 ### 🌐 Portfolio
-portfolio-gamma-ochre-59.vercel.app
+https://portfolio-gamma-ochre-59.vercel.app/
 
 ### 💼 LinkedIn
-linkedin.com/in/sudha-sree-reddy-96a6a8316
+https://www.linkedin.com/in/sudha-sree-reddy-96a6a8316/
 
 ### 🐙 GitHub
-github.com/sudhasree3101
+https://github.com/sudhasree3101
 
 ---
 
