@@ -69,8 +69,13 @@ npm start
 The portal interface will automatically load at: http://localhost:3000
 ```
 🛣️ API Routing DirectoryAccess ActionRequest TypeTarget Endpoint RouteClearanceAuthenticationPOST/api/auth/login✨ Public AccessRegistrationPOST/api/students/register✨ Public AccessFetch DrivesGET/api/jobs/active🔑 Student / AdminPost JobPOST/api/jobs/create🛡️ Admin / CorporateTrack ApplicationGET/api/applications/student/{id}🔑 Student
+
 👩‍💻 Lead ArchitectSudha Sree Reddy — Full Stack Engineer / Java Specialist
+
 🌐 Live Portfolio Website: portfolio-gamma-ochre-59.vercel.app
+
 💼 Professional LinkedIn: linkedin.com/in/sudha-sree-reddy-96a6a8316
+
 🐙 Source Code Profile: github.com/sudhasree3101
+
 📄 LicenseThis repository is published under the open-source MIT License. Feel free to use and adapt it for educational settings.
