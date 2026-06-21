@@ -1,4 +1,4 @@
-# <p align="center">🎓 PLACEMENT MANAGEMENT PORTAL 🚀</p>
+Markdown# <p align="center">🎓 PLACEMENT MANAGEMENT PORTAL 🚀</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java"/>
@@ -72,17 +72,15 @@
 ## ⚙️ Deployment & Launch Sequence
 
 ### 🗄️ 1. Database Creation
-Execute the following query inside your local MySQL instance:
+
+Execute the following query inside your local MySQL instance to build your schema:
+
 ```sql
 CREATE DATABASE placement_portal;
-
-☕ 2. Backend Bootup (Spring Boot)Open your terminal in the backend root and launch the Maven runner:Bashmvn clean install
+Ensure your backend file src/main/resources/application.properties targets this schema name correctly:Propertiesspring.datasource.url=jdbc:mysql://localhost:3306/placement_portal
+spring.jpa.hibernate.ddl-auto=update
+☕ 2. Backend Bootup (Spring Boot)Open your terminal in the backend root directory and launch the application:Bashmvn clean install
 mvn spring-boot:run
-The engine will start operating at: http://localhost:8080
-⚛️ 3. Frontend Ignition (React)Open a separate terminal window inside the frontend folder directory:Bash
-npm install
+The backend server will start running at: http://localhost:8080⚛️ 3. Frontend Ignition (React)Open a separate, clean terminal window inside your frontend folder directory:Bashnpm install
 npm start
-The portal client view will load at: http://localhost:3000
-🛣️ API Routing DirectoryAccess ActionRequest TypeTarget Endpoint RouteClearanceAuthenticationPOST/api/auth/login✨ Public AccessRegistrationPOST/api/students/register✨ Public AccessFetch DrivesGET/api/jobs/active🔑 Student / AdminPost JobPOST/api/jobs/create🛡️ Admin / CorporateTrack ApplicationGET/api/applications/student/{id}🔑 Student
-👩‍💻 Lead Architect🌐 Live Portfolio Website: portfolio-gamma-ochre-59.vercel.app💼 Professional LinkedIn: linkedin.com/in/sudha-sree-reddy-96a6a8316🐙 Source Code Profile: github.com/sudhasree3101
-📄 LicenseThis repository is published under the open-source MIT License. Feel free to use and adapt it for educational settings.
+The portal interface will automatically load at: http://localhost:3000🛣️ API Routing DirectoryAccess ActionRequest TypeTarget Endpoint RouteClearanceAuthenticationPOST/api/auth/login✨ Public AccessRegistrationPOST/api/students/register✨ Public AccessFetch DrivesGET/api/jobs/active🔑 Student / AdminPost JobPOST/api/jobs/create🛡️ Admin / CorporateTrack ApplicationGET/api/applications/student/{id}🔑 Student👩‍💻 Lead Architect🌐 Live Portfolio Website: portfolio-gamma-ochre-59.vercel.app💼 Professional LinkedIn: linkedin.com/in/sudha-sree-reddy-96a6a8316🐙 Source Code Profile: github.com/sudhasree3101📄 LicenseThis repository is published under the open-source MIT License. Feel free to use and adapt it for educational settings.
